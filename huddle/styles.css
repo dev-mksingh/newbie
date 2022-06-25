@@ -131,6 +131,10 @@ html {
   }
   
   @media screen and (min-width: 700px) {
+      
+      body {
+        background-image: url(images/bg-desktop.svg);
+    }
 
     header img {
       margin-left: 10%;
