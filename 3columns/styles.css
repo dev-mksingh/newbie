@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* margin-top: 100px; */
+}
+
+main > * {
+    width: 50%;
+    margin: auto;
+}
+
+section > div{
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+div > * {
+    margin-top: 20px;
+}
+
+
+button {
+    margin-bottom: 20px;
+    background-color: hsl(0, 0%, 95%);
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    color: hsl(0, 0%, 95%)
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 2% 2% 0 0;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0% 0% 2% 2%;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 20vh;
+    overflow:hidden;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        height: 60vh;
+        margin-top: 100px;
+    }
+
+    .sedans, .suvs, .luxury {
+        flex: 1 0 30%;
+        height: 100%;
+    }
+
+    .sedans {
+        border-radius: 2% 0 0 2%;
+    }
+
+    .luxury {
+        border-radius: 0% 2% 2% 0%;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
