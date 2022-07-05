@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 50%, 50%;
+        font-size: 15px;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: 400;
+}
+
+header, main {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.heading {
+    margin-top: 20px;
+    color: hsl(300, 43%, 22%);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.heading p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.rating {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+}
+
+.customer-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+}
+
+.customer-intro {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.customer-intro img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.customer-intro div {
+    margin-left: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.customer-intro div p {
+    color: hsl(333, 80%, 67%);
+}
+
+.customer-review {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:700px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 50%, 50%;
+    }
+    header, main {
+        width: 90%;
+        max-width: 90%;
+    }
+    header {
+        display: flex;
+        margin-top: 100px;
+    }
+    
+    header > div {
+        flex: 1 1 50%;
+    }
+
+    .ratings-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating {
+        width: 90%;
+        max-width: 350px;
+        min-width: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .rating2 {
+        align-self: center;
+    }
+
+    .rating3 {
+        align-self: flex-end;
+    }
+
+    main {
+        display: flex;
+        height: 300px;
+    }
+
+    section {
+        margin-left: 10px;
+    }
+
+    .customer1 {
+        align-self: flex-start;
+    }
+
+    .customer2 {
+        align-self: center;
+    }
+
+    .customer3 {
+        align-self: flex-end;
+    }
+}
